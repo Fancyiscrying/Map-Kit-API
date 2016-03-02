@@ -13,6 +13,10 @@
 		B121F0C11C866FFF00DFD71B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B121F0BF1C866FFF00DFD71B /* Main.storyboard */; };
 		B121F0C31C866FFF00DFD71B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B121F0C21C866FFF00DFD71B /* Assets.xcassets */; };
 		B121F0C61C866FFF00DFD71B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B121F0C41C866FFF00DFD71B /* LaunchScreen.storyboard */; };
+		B121F0CE1C86725800DFD71B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B121F0CD1C86725800DFD71B /* MapKit.framework */; };
+		B121F0D01C8675E400DFD71B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B121F0CF1C8675E400DFD71B /* CoreLocation.framework */; };
+		B121F0D21C8675ED00DFD71B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B121F0D11C8675ED00DFD71B /* AddressBook.framework */; };
+		B17ACD2A1C86BE6200E994DC /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B17ACD291C86BE6200E994DC /* MyAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,11 @@
 		B121F0C21C866FFF00DFD71B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B121F0C51C866FFF00DFD71B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B121F0C71C866FFF00DFD71B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B121F0CD1C86725800DFD71B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B121F0CF1C8675E400DFD71B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B121F0D11C8675ED00DFD71B /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		B17ACD281C86BE6200E994DC /* MyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
+		B17ACD291C86BE6200E994DC /* MyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B121F0D21C8675ED00DFD71B /* AddressBook.framework in Frameworks */,
+				B121F0D01C8675E400DFD71B /* CoreLocation.framework in Frameworks */,
+				B121F0CE1C86725800DFD71B /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +54,9 @@
 		B121F0AA1C866FFF00DFD71B = {
 			isa = PBXGroup;
 			children = (
+				B121F0D11C8675ED00DFD71B /* AddressBook.framework */,
+				B121F0CF1C8675E400DFD71B /* CoreLocation.framework */,
+				B121F0CD1C86725800DFD71B /* MapKit.framework */,
 				B121F0B51C866FFF00DFD71B /* Map Kit API */,
 				B121F0B41C866FFF00DFD71B /* Products */,
 			);
@@ -62,6 +77,8 @@
 				B121F0BA1C866FFF00DFD71B /* AppDelegate.m */,
 				B121F0BC1C866FFF00DFD71B /* ViewController.h */,
 				B121F0BD1C866FFF00DFD71B /* ViewController.m */,
+				B17ACD281C86BE6200E994DC /* MyAnnotation.h */,
+				B17ACD291C86BE6200E994DC /* MyAnnotation.m */,
 				B121F0BF1C866FFF00DFD71B /* Main.storyboard */,
 				B121F0C21C866FFF00DFD71B /* Assets.xcassets */,
 				B121F0C41C866FFF00DFD71B /* LaunchScreen.storyboard */,
@@ -151,6 +168,7 @@
 			files = (
 				B121F0BE1C866FFF00DFD71B /* ViewController.m in Sources */,
 				B121F0BB1C866FFF00DFD71B /* AppDelegate.m in Sources */,
+				B17ACD2A1C86BE6200E994DC /* MyAnnotation.m in Sources */,
 				B121F0B81C866FFF00DFD71B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +280,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Map Kit API/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Fancy.Map-Kit-API";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,6 +292,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Map Kit API/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Fancy.Map-Kit-API";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,6 +318,7 @@
 				B121F0CC1C866FFF00DFD71B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
